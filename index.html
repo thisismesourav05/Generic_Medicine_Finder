@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Generic Medicine Finder</title>
+</head>
+<body>
+    <div class="container">
+        <h1 id="main-heading">Generic Medicine Finder</h1>
+        <div id="searchForm">
+            <input type="text" id="drugNameInput" placeholder="Enter branded medicine name...">
+            <input type="submit" onclick='loadxml()'></input>
+        </div>
+
+        <span id="search-img">
+            <img src="img/image copy.png" alt="">
+        </span>
+
+    <!-- Results will be displayed here -->
+        <div id="results">
+            <div class="medicine-info">
+                <h4 id="synonym"></h4>
+            </div>
+            <div class="medicine-info">
+                <h4 id="synonym2"></h4>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

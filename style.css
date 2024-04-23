@@ -1,0 +1,121 @@
+/* Reset default browser styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#main-heading {
+    font-size: 35px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, red, blue);
+    background-size: cover;
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Search form styles */
+#searchForm {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 60%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Results section styles */
+#results {
+    height: 380px;
+    background-color: #fff;
+    background-image: url(/img/image.png);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 100px;
+}
+
+.medicine-info {
+    margin: 8% 10px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #f8f4e6;
+    cursor: pointer;
+}
+
+.medicine-info:hover {
+    transition: all ease .5s;
+    scale: 1.2;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    background: linear-gradient(#f8f4e6, #f8f4e6) padding-box,
+              url(img/image.png);
+  border-radius: inherit;
+  border: 4px solid transparent;
+}
+
+#search-img {
+    opacity: 1;
+    position: fixed;
+    left: 595px;
+    top: 145px;
+}
+
+
+
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    input[type="text"] {
+        width: 96%;
+    }
+
+    #search-img {
+        display: none;
+    }
+
+    #results {
+        margin-top: 0%;
+    }
+}
